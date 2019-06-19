@@ -37,7 +37,7 @@ MSE = 307
 
 Training Loss curve:
 
-![img](https://github.com/laurence-lin/Neural-Network-Prediction-for-S-P-500-stock-price/blob/master/SP500_loss.png)
+![img](https://github.com/laurence-lin/Neural-Network-Prediction-for-S-P-500-stock-price/blob/master/SP500_loss_2.png)
 
 Training performance: predict on training set
 
