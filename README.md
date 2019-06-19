@@ -11,7 +11,7 @@ Test set: 3000
 
 Model:
 
-3 hidden layer neural network + 1 output layer
+1 hidden layer neural network + 1 output layer
 
 hidden neuron = 30
 
@@ -48,4 +48,10 @@ Testing performance: predict on testing set
 ![img](https://github.com/laurence-lin/Neural-Network-Prediction-for-S-P-500-stock-price/blob/master/test%20result_2.png)
 
 
-I found that model selection is important, originally set fewer neurons and get bad reesult.
+Discussion:
+
+1. model selection is important, originally set fewer neurons and get bad reesult.
+
+2. If training set is large enough, even one hidden layer is able to perform prediction.
+
+3. Add moving average have no clear improvement on performance.
