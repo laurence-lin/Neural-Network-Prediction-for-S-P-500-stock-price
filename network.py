@@ -52,8 +52,6 @@ def hidden_bn_relu(layer_input, out_feature):
     
 # Prediction network
 n1_hidden = 30
-n2_hidden = 30
-n3_hidden = 30
 n_out = 1
 def inference(input_x, reuse):
     
@@ -61,14 +59,6 @@ def inference(input_x, reuse):
     with tf.variable_scope('hidden_1', reuse = reuse):
         h1_out = hidden_bn_relu(input_x, n1_hidden)
         layer.append(h1_out)
-        
-    '''with tf.variable_scope('hidden_2', reuse = reuse):
-        h2_out = hidden_bn_relu(h1_out, n2_hidden)
-        layer.append(h2_out)
-        
-    with tf.variable_scope('hidden_3', reuse = reuse):
-        h3_out = hidden_bn_relu(h2_out, n3_hidden)
-        layer.append(h3_out)'''
         
     with tf.variable_scope('output_layer', reuse = reuse): # no need BN in output layer
         initializer = tf.truncated_normal_initializer(stddev = 0.001)
